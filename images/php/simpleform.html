@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Simple form</h1>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+ <fieldset>
+  <legend><strong>Information:</strong></legend>
+  <label for="fname" ><strong>First name: </strong></label>
+  <input type="text" id="fname" name="fname" placeholder="John"><br><br>
+  <label for="lname" ><strong>Last name: </strong></label>
+  <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
+  <label for="email" ><strong>E-mail: </strong></label>
+  <input type="email" id="email" name="email" placeholder="johndoe@xyz.com"><br><br>
+  <label for="fname" ><strong>Password: </strong></label>
+  <input type="text" id="password" name="password" placeholder="Password"><br><br>
+  <label for="birthday"><strong>Birthday: </strong></label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <div>
+  <label><strong>
+  Course:
+  </strong>
+  </label>
+  <select>
+  <option value="Course">Course</option>
+  <option value="IWP">Internet and Web Programming</option>
+  <option value="SE">Software Engineering</option>
+  <option value="HCI">Human Computer Interaction</option>
+  <option value="OS">Operating Systems</option>
+  </select>
+  </div><br>
+  <label for="resume"><strong>Resume: </strong></label><br>
+  <input type="file" id="myFile" name="filename"><br><br>
+  Select image to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload"><br><br>
+  <div>
+  <label><strong>
+  Gender:
+  </strong>
+  </label><br>
+  <input type="radio" value="Male" name="gender" checked > Male
+  <input type="radio" value="Female" name="gender"> Female
+  <input type="radio" value="Other" name="gender"> Other
+  </div><br>
+  <label for="Technical Domain"><strong>Technical Domain: </strong></label><br>
+  <input type="checkbox" name="web" value="Web">
+  <label for="web"> I am a web developer</label><br>
+  <input type="checkbox" name="app" value="App">
+  <label for="app"> I am an app developer</label><br>
+  <input type="checkbox" name="ios" value="iOS">
+  <label for="ios"> I am an iOS developer</label><br><br>
+  <label for="Address"><strong>Address: </strong></label><br>
+  <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+  </textarea><br><br>
+
+  <input type="submit" value="Submit" name="submit">
+
+ </fieldset>
+</form>
+
+</body>
+</html>
